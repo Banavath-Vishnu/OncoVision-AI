@@ -25,8 +25,6 @@ OncoVision AI explores the engineering foundations behind such systems by:
 
 ## 🔹 Main Interface
 
-(Add screenshot here after uploading to assets folder)
-
 ```markdown
 ![Main UI](assets/ui_home.png)
 ```
@@ -38,34 +36,6 @@ OncoVision AI explores the engineering foundations behind such systems by:
 ```markdown
 ![Prediction Output](assets/prediction_result.png)
 ```
-
----
-
-# 📂 Where to Add Screenshots
-
-Create a folder in your repository called:
-
-```
-assets/
-```
-
-Place your screenshots inside:
-
-```
-assets/ui_home.png
-assets/prediction_result.png
-```
-
-Recommended:
-
-* PNG format
-* 1920x1080 resolution
-* Clean UI without browser clutter
-
-Optional but recommended:
-
-* Add a short 30–45 second demo video
-
 ---
 
 # 📊 Dataset
