@@ -1,13 +1,5 @@
-# Framework
-flask
-
-# Deep Learning (Essential for EfficientNetB0)
-tensorflow
-numpy
-
-# Image Processing (Required for TTA and PIL Sanity Checks)
-Pillow
-
-# Evaluation & Metrics (Required for your CV Classification Reports)
+tensorflow 
+flask 
+pillow 
+matplotlib 
 scikit-learn
-matplotlib
