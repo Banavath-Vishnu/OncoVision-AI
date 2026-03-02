@@ -23,9 +23,9 @@ OncoVision AI explores the engineering foundations behind such systems by:
 
 ## 📸 Application Preview
 
-<p align="center">
-  <img src="breast cancer detection/assests/ui_home.jpeg" width="45%" />
-  <img src="breast cancer detection/assests/prediction_result.jpeg" width="45%" />
+<p align="flex">
+  <img src="breast cancer detection/assests/ui_home.jpeg" width="65%" />
+  <img src="breast cancer detection/assests/prediction_result.jpeg" width="65%" />
 </p>
 
 ---
