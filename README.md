@@ -1,53 +1,74 @@
-# OncoVision-AI
-## 🩺 Breast Cancer Detection using Deep Learning
+# 🧠 OncoVision AI
 
-An end-to-end deep learning system for classifying breast ultrasound images into **Benign**, **Malignant**, and **Normal** categories using Transfer Learning with EfficientNetB0.
+### AI-Powered Breast Ultrasound Classification System
 
-⚠️ **Disclaimer:** This project is for educational and research purposes only. Not intended for clinical use.
+OncoVision AI is an end-to-end deep learning system that classifies breast ultrasound images into **Benign**, **Malignant**, and **Normal** categories.
+
+⚠️ **Disclaimer:** This project is developed for educational and research purposes only. It is not intended for clinical or diagnostic use.
 
 ---
 
 ## 🚀 Project Overview
 
-Early detection of breast cancer significantly improves survival rates. This project explores how deep learning can assist in ultrasound image classification for screening support.
+Early detection plays a critical role in breast cancer survival rates. Many AI startups today are building medical imaging systems to assist radiologists with faster and more consistent screening.
 
-The system includes:
+OncoVision AI explores the engineering foundations behind such systems by:
 
-* Transfer learning using EfficientNetB0
-* Two-stage fine-tuning strategy
-* Class imbalance handling
-* Test-Time Augmentation (TTA)
-* Confidence-based rejection mechanism
-* Flask-based web deployment
+* Training a CNN-based image classifier
+* Handling dataset imbalance
+* Improving inference robustness
+* Deploying a real-time prediction web application
 
 ---
 
-## 🖼 Application Preview
+# 📸 Application Preview
 
-> 📌 Add screenshots inside an `assets/` folder in your repository.
+## 🔹 Main Interface
 
-### 🔹 Main Interface
-
-```
-assets/ui_home.png
-```
-
-### 🔹 Prediction Output
-
-```
-assets/prediction_result.png
-```
-
-Then embed them like this:
+(Add screenshot here after uploading to assets folder)
 
 ```markdown
 ![Main UI](assets/ui_home.png)
-![Prediction Result](assets/prediction_result.png)
+```
+
+## 🔹 Prediction Result
+
+(Add screenshot here after uploading to assets folder)
+
+```markdown
+![Prediction Output](assets/prediction_result.png)
 ```
 
 ---
 
-## 📊 Dataset
+# 📂 Where to Add Screenshots
+
+Create a folder in your repository called:
+
+```
+assets/
+```
+
+Place your screenshots inside:
+
+```
+assets/ui_home.png
+assets/prediction_result.png
+```
+
+Recommended:
+
+* PNG format
+* 1920x1080 resolution
+* Clean UI without browser clutter
+
+Optional but recommended:
+
+* Add a short 30–45 second demo video
+
+---
+
+# 📊 Dataset
 
 This project uses the **Breast Ultrasound Images Dataset (BUSI)**.
 
@@ -56,21 +77,21 @@ Kaggle Link:
 
 ---
 
-## 📥 How to Download the Dataset (Manual Method)
+## 📥 How to Download Dataset (Manual Method)
 
-1. Open the Kaggle dataset link above.
-2. Sign in to your Kaggle account.
-3. Click the **Download** button.
-4. Extract the downloaded `.zip` file.
+1. Open the Kaggle link above
+2. Sign in to your Kaggle account
+3. Click **Download**
+4. Extract the ZIP file
 5. Rename the extracted folder to:
 
 ```
 dataset
 ```
 
-6. Place it inside your project root directory.
+6. Place it in your project root directory
 
-Final folder structure should look like:
+Final structure should look like:
 
 ```
 dataset/
@@ -81,25 +102,18 @@ dataset/
 
 ---
 
-## 🏗 Project Structure
+# 🏗 Project Structure
 
 ```
-project-folder/
+OncoVision-AI/
 │
 ├── dataset/
-│   ├── benign/
-│   ├── malignant/
-│   └── normal/
-│
 ├── model/
 │   └── breast_cancer_model.keras
-│
 ├── static/
 │   └── uploads/
-│
 ├── templates/
 │   └── index.html
-│
 ├── train.py
 ├── app.py
 ├── requirements.txt
@@ -108,51 +122,61 @@ project-folder/
 
 ---
 
-## 🧠 Model Architecture
+# 🧠 Model Architecture
 
-* Backbone: EfficientNetB0 (ImageNet pretrained)
+* EfficientNetB0 backbone
 * Global Average Pooling
 * Batch Normalization
 * Dropout (0.5)
-* Dense Layer (128 units, ReLU)
-* Output Layer (3-class Softmax)
+* Dense layer (ReLU)
+* Softmax output (3 classes)
 
 ---
 
-## ⚙️ Training Strategy
+# ⚙️ Training Strategy
 
-### Stage 1: Head Training
+### Stage 1 – Head Training
 
 * Backbone frozen
 * Train classification layers
 * Learning rate: 1e-3
 
-### Stage 2: Fine-Tuning
+### Stage 2 – Fine-Tuning
 
 * Unfreeze last 15 layers
-* Micro learning rate: 1e-5
+* Learning rate: 1e-5
 * Prevent catastrophic forgetting
 
-### Additional Techniques
+### Additional Enhancements
 
 * Class-weight balancing
 * Early stopping
-* Learning rate reduction
+* Learning rate scheduling
 * Model checkpointing
 * Test-Time Augmentation (TTA)
 
 ---
 
-## 🖥 Installation & Setup
+# 🔍 Inference Features
 
-### 1️⃣ Clone Repository
+* Test-Time Augmentation
+* Confidence score visualization
+* Confidence-based rejection mechanism
+* Real-time Flask deployment
+* Clean Tailwind UI
+
+---
+
+# 🖥 Installation
+
+## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/breast-cancer-detection.git
-cd breast-cancer-detection
+git clone https://github.com/yourusername/onco-vision-ai.git
+cd onco-vision-ai
 ```
 
-### 2️⃣ Create Virtual Environment
+## 2️⃣ Create Virtual Environment
 
 ```bash
 python -m venv venv
@@ -172,7 +196,7 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### 3️⃣ Install Dependencies
+## 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -180,13 +204,13 @@ pip install -r requirements.txt
 
 ---
 
-## 🏋️ Training the Model
+# 🏋️ Train the Model
 
 ```bash
 python train.py
 ```
 
-The trained model will be saved to:
+Model will be saved to:
 
 ```
 model/breast_cancer_model.keras
@@ -194,43 +218,31 @@ model/breast_cancer_model.keras
 
 ---
 
-## 🌐 Running the Web Application
+# 🌐 Run the Application
 
 ```bash
 python app.py
 ```
 
-Open your browser and go to:
+Open browser:
 
 ```
 http://127.0.0.1:5000/
 ```
 
-Upload an ultrasound image to test predictions.
+---
+
+# 🐍 Python Version
+
+This project was developed and tested using:
+
+**Python 3.10**
+
+It is recommended to use Python 3.10 to avoid compatibility issues with TensorFlow.
 
 ---
 
-## 🔍 Inference Features
-
-* Test-Time Augmentation (TTA)
-* Confidence score visualization
-* Confidence-based rejection for uncertain inputs
-* Clean Tailwind CSS UI
-* Real-time image classification
-
----
-
-## 🧠 Key Learnings
-
-* Transfer learning for medical imaging
-* Fine-tuning CNNs without catastrophic forgetting
-* Handling dataset imbalance
-* Managing model overconfidence
-* Deploying deep learning models as web apps
-
----
-
-## 📦 Requirements
+# 📦 Requirements
 
 Main dependencies:
 
@@ -245,18 +257,28 @@ See `requirements.txt` for full list.
 
 ---
 
-## 🚀 Future Improvements
+# 🧠 Key Learnings
 
-* Add Ultrasound vs Non-Ultrasound detector
-* Implement Grad-CAM for explainability
-* Add temperature scaling for calibration
-* Deploy on cloud (AWS/GCP)
-* Convert backend to FastAPI
-* Experiment with Vision Transformers
+* Transfer learning for medical imaging
+* Fine-tuning deep CNNs safely
+* Handling small and imbalanced datasets
+* Managing softmax overconfidence
+* Building safer AI inference pipelines
+* Deploying ML models as web applications
 
 ---
 
-## 👨‍💻 Author
+# 🚀 Future Improvements
+
+* Add Ultrasound vs Non-Ultrasound classifier
+* Grad-CAM explainability
+* Model calibration (temperature scaling)
+* Vision Transformer experimentation
+* Cloud deployment
+
+---
+
+# 👨‍💻 Author
 
 **Banavath Vishnu**
 Machine Learning & AI Enthusiast
@@ -266,4 +288,4 @@ LinkedIn:
 
 ---
 
-⭐ If you found this project useful, consider giving it a star!
+⭐ If you found OncoVision AI useful, consider giving it a star!
