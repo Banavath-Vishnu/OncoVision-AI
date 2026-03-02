@@ -22,11 +22,11 @@ OncoVision AI explores the engineering foundations behind such systems by:
 ---
 ## 🔹 Main Interface
 
-![Main UI](assets/ui_home.jpeg)
+![Main UI](assests/ui_home.jpeg)
 
 ## 🔹 Prediction Output
 
-![Prediction Result](assets/prediction_result.jpeg)
+![Prediction Result](assests/prediction_result.jpeg)
 ---
 
 # 📊 Dataset
