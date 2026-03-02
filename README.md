@@ -20,10 +20,14 @@ OncoVision AI explores the engineering foundations behind such systems by:
 * Deploying a real-time prediction web application
 
 ---
+
+## 📸 Application Preview
+
 <p align="center">
-  <img src="assests/ui_home.jpeg" width="45%" />
-  <img src="assests/prediction_result.jpeg" width="45%" />
+  <img src="assets/ui_home.jpeg" width="45%" />
+  <img src="assets/prediction_result.jpeg" width="45%" />
 </p>
+
 ---
 
 # 📊 Dataset
@@ -65,6 +69,9 @@ dataset/
 ```
 OncoVision-AI/
 │
+├── assets/
+│   ├── ui_home.jpeg
+│   └── prediction_result.jpeg
 ├── dataset/
 ├── model/
 │   └── breast_cancer_model.keras
@@ -130,8 +137,8 @@ OncoVision-AI/
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/onco-vision-ai.git
-cd onco-vision-ai
+git clone https://github.com/Banavath-Vishnu/OncoVision-AI.git
+cd OncoVision-AI
 ```
 
 ## 2️⃣ Create Virtual Environment
