@@ -20,15 +20,13 @@ OncoVision AI explores the engineering foundations behind such systems by:
 * Deploying a real-time prediction web application
 
 ---
-
-# 📸 Application Preview
 ## 🔹 Main Interface
 
-!(assets/ui_home.jpeg)
+![Main UI](assets/ui_home.jpeg)
 
 ## 🔹 Prediction Output
 
-!(assets/prediction_result.jped)
+![Prediction Result](assets/prediction_result.jpeg)
 ---
 
 # 📊 Dataset
